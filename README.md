@@ -12,11 +12,12 @@ Please note you will require either a Hot Air rework station or Hot Plate heatin
 
 The Rumble feature is optional and if you decide not to use it exclude the following"
 
-R11
-R12
-M1
-D1
+R11,
+R12,
+M1,
+D1,
 Q2
+
 
 Battery hold down is NOT included however can be aquired at the following 2 links:
 
