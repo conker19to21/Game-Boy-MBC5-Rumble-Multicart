@@ -10,7 +10,7 @@ Original files were converted from Eagle to KiCad cleaned and modified to add th
 
 Please note you will require either a Hot Air rework station or Hot Plate heating station to secure the DC motor properly to the board.
 
-The Rumble feature is optional and if you decide not to use it exclude the following"
+The Rumble feature is optional and if you decide not to use it exclude the following:
 
 R11,
 R12,
