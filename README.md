@@ -11,6 +11,7 @@ Original files were converted from Eagle to KiCad cleaned and modified to add th
 Please note you will require either a Hot Air rework station or Hot Plate heating station to secure the DC motor properly to the board.
 
 ![image](https://github.com/conker19to21/Game-Boy-MBC5-Rumble-Multicart/blob/main/IMG_5336.jpg)
+![image](https://github.com/conker19to21/Game-Boy-MBC5-Rumble-Multicart/blob/main/IMG_5338.jpg)
 
 Please see below for the Mouse's original documentation.
 
