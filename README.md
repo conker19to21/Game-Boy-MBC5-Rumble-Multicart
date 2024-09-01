@@ -206,15 +206,15 @@ If you're having trouble fitting the circuit board into a shell, because the tab
 | C8                    | 0.01uF                 | 0603           | Capacitor (MLCC)   | [https://mou.sr/3AsRwK1](https://mou.sr/3AsRwK1) |
 | C12                   | 0.1uF                  | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | Q1                    | 2N7002                 | SOT-23         | N-Channel FET      | [https://mou.sr/3rgfh6J](https://mou.sr/3rgfh6J) |
-| Q2                    | SN74AHC1G126           | SC70           | NPN FET            | [https://mou.sr/3YlwRnW](https://mou.sr/3YlwRnW) |
+| Q2                    | SN74AHC1G126           | SC70           | NPN FET            | [https://mou.sr/3YlwRnW](https://mou.sr/3YlwRnW) OR <a href="https://www.aliexpress.com/item/1005005140909500.html?spm=a2g0o.order_list.order_list_main.5.637818020QcNX1"> AliExpress</a>|
 | R1                    | 10k                    | 0603           | Resistor           | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | R5                    | 130k                   | 0603           | Resistor           | [https://mou.sr/3MjXliy](https://mou.sr/3MjXliy) |
 | R6                    | 130k                   | 0603           | Resistor           | [https://mou.sr/3MjXliy](https://mou.sr/3MjXliy) |
 | R8                    | 10k                    | 0603           | Resistor           | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | R9                    | 130k                   | 0603           | Resistor           | [https://mou.sr/3MjXliy](https://mou.sr/3MjXliy) |
 | R10                   | 49.9k                  | 0603           | Resistor           | [https://mou.sr/3Q3NRZO](https://mou.sr/3Q3NRZO) |
-| R11                   | 15Ω                    | 0603           | Resistor           | [https://mou.sr/3zYvyRE](https://mou.sr/3zYvyRE) |
-| R12                   | 30k                    | 0603           | Resistor           | [https://mou.sr/46kfpCa](https://mou.sr/46kfpCa) |
+| R11                   | 15Ω                    | 0603           | Resistor           | [https://mou.sr/3zYvyRE](https://mou.sr/3zYvyRE) OR <a href="https://www.aliexpress.us/item/2251832678021377.html?spm=a2g0o.order_list.order_list_main.68.31621802J8yZUJ&gatewayAdapt=glo2usa4itemAdapt"> AliExpress</a>|
+| R12                   | 30k                    | 0603           | Resistor           | [https://mou.sr/46kfpCa](https://mou.sr/46kfpCa) OR <a href="https://www.aliexpress.us/item/2251832678021377.html?spm=a2g0o.order_list.order_list_main.68.31621802J8yZUJ&gatewayAdapt=glo2usa4itemAdapt"> AliExpress</a>||
 | SW1                   | See note               | 5.2 x 5.2mm    | Tactile Switch     | [https://mou.sr/3uipCQz](https://mou.sr/3uipCQz) OR see note |
 | SW2                   | CAS-D20TA              | J Form Lead    | Dual SPDT          | [https://mou.sr/46gGqF1](https://mou.sr/46gGqF1) |
 | SW3                   | CAS-D20TA              | J Form Lead    | Dual SPDT          | [https://mou.sr/46gGqF1](https://mou.sr/46gGqF1) |
@@ -226,8 +226,8 @@ If you're having trouble fitting the circuit board into a shell, because the tab
 | U6                    | SN74AHC1G126           | SC70           | Tri-State Buffer   | [https://mou.sr/3T9Zdim](https://mou.sr/3T9Zdim) |
 | U7                    | SN74AHC1G126           | SC70           | Tri-State Buffer   | [https://mou.sr/3T9Zdim](https://mou.sr/3T9Zdim) |
 | U8                    | SN74AHC1G126           | SC70           | Tri-State Buffer   | [https://mou.sr/3T9Zdim](https://mou.sr/3T9Zdim) |
-| M1                    | Vibration Motor        | Z43            | DC Motor           | [https://www.aliexpress.com/item/32787320737.html](https://www.aliexpress.com/item/32787320737.html) |
-| D1                    |BC817-40                | SOD-123        | Schottky diode     | [https://mou.sr/3LEXYCJ](https://mou.sr/3LEXYCJ) |
+| M1                    | Vibration Motor        | Z43            | DC Motor           | <a href="https://www.aliexpress.com/item/32787320737.html"> AliExpress</a>|
+| D1                    |BC817-40                | SOD-123        | Schottky diode     | [https://mou.sr/3LEXYCJ](https://mou.sr/3LEXYCJ) OR <a href="https://www.aliexpress.com/item/1005003618692669.html?spm=a2g0o.order_list.order_list_main.5.31621802J8yZUJ"> AliExpress</a>|
 
 ### Note about SW1
 
