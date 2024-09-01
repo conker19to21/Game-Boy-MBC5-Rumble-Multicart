@@ -10,6 +10,14 @@ Original files were converted from Eagle to KiCad cleaned and modified to add th
 
 Please note you will require either a Hot Air rework station or Hot Plate heating station to secure the DC motor properly to the board.
 
+Battery hold down is NOT included however can be aquired at the following 2 links:
+
+<a href="https://oshpark.com/shared_projects/XSjucPvH"> CR2Retainer</a>
+
+<a href="https://www.digikey.com/short/4zrrw5rr"> RETAINER</a>
+
+Special Thanks to Bucket Mouse, HDR and Bonzo!
+
 ![image](https://github.com/conker19to21/Game-Boy-MBC5-Rumble-Multicart/blob/main/IMG_5336.jpg)
 ![image](https://github.com/conker19to21/Game-Boy-MBC5-Rumble-Multicart/blob/main/IMG_5338.jpg)
 
