@@ -1,12 +1,24 @@
-# Game Boy MBC5 Multicart
+# Game Boy MBC5 Rumble Multicart
 
-This is my design of a flashable MBC5-based multicart for the Game Boy. You can make a 2-in-1 or 4-in-1 cartridge, that changes games based on a button press or power cycling the Game Boy. With this board you can also make a single game, but with the addition of a pressable reset button on the cartridge.
+This is a flashable MBC5-based multicart for the Game Boy. You can make a 2-in-1 or 4-in-1 cartridge, that changes games based on a button press or power cycling the Game Boy. With this board you can also make a single game, but with the addition of a pressable reset button on the cartridge.
+
+I had adapted the DC rumble motor to the board to allow the option to have rumble availability. This does NOT make non rumble based games have rumble feedback.
+
+This board allows the option to allow both rumble and non rumble games in 1 cart with full save functionality!
+
+Original files were converted from Eagle to KiCad cleaned and modified to add the changes.
+
+Please note you will require either a Hot Air rework station or Hot Plate heating station to secure the DC motor properly to the board.
+
+Please see below for the Mouse's original documentation.
+
+![image](https://private-user-images.githubusercontent.com/79350460/362808066-d0c1e5a3-aa70-49f6-8867-7be02a11127e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjUxNzgzNjYsIm5iZiI6MTcyNTE3ODA2NiwicGF0aCI6Ii83OTM1MDQ2MC8zNjI4MDgwNjYtZDBjMWU1YTMtYWE3MC00OWY2LTg4NjctN2JlMDJhMTExMjdlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTAxVDA4MDc0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA1MjI0NGZjN2M0MmQwMzY3ZTIxMTJkNjZlNmY0YThiMWQ0MDJiY2EwYzVjMDg4ZDA5NmZlMzE5MmU4ZjRjODkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.tLwJES8k5k2GEA-q7z0vVUgHWVOFACCc68rWR7xbyPs)
 
 The features are as follows:
 
 - Able to make a cartridge with either 2x 2 MB games or 4x 1 MB games
 - Optionally adds a pressable button to the cartridge (no shell cutting required)
-  - The button can be configured to cycle games on the cart, reset the console, or both
+- The button can be configured to cycle games on the cart, reset the console, or both
 - Configurable to have separate save data for each game, or to share the same save data across multiple games
 - Fully compatible with the <a href="https://www.gbxcart.com/">GBxCart RW</a> so you can transfer games and save files to and from the board
 
@@ -17,17 +29,7 @@ Some examples of fun cartridges you can make with this board are:
 - Both Pokemon Red and Blue with *the same* save that can switch between versions *during gameplay without resetting* (hotswap!)
 - A single copy of Powerpuff Girls with two separate save files
 
-![assemblepic](https://github.com/MouseBiteLabs/Game-Boy-MBC5-Multicart/assets/97127539/517cc84e-d689-4f61-8f84-ce439ace5522)
-
-![boardscan](https://github.com/MouseBiteLabs/Game-Boy-MBC5-Multicart/assets/97127539/485bf829-4126-44c7-85ff-2cf3eeee8842)
-
 All gerbers and source files can be found in this repo, as this project is fully open source. Technical documentation of the board can be found in the Technical folder.
-
-## Tutorial Video
-
-This is a video tutorial for the MBC3 multicart specifically, but the process is nearly identical.
-
-[![Multicart Video Tutorial](http://img.youtube.com/vi/DJ7rJUZhDuM/maxresdefault.jpg)](http://www.youtube.com/watch?v=DJ7rJUZhDuM "Game Boy Multicart Tutorial (Pokemon Gold and Silver)")
 
 ## Important Things Before You Start
 
@@ -48,15 +50,9 @@ The zipped folder contains all the gerber files for this board. The following op
 - Surface Finish: ENIG
 - Gold Fingers: Yes, 30° chamfer
 
-**I sell this blank circuit board on Etsy, so you don't have to buy a bunch of multiples if you don't want to.** (Click the banner!)
-
-<a href="https://mousebitelabs.etsy.com/listing/1637543242"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
-
 You can use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using this link (disclosure: I receive 10% of the sale value to go twoards future PCB orders of my own):
 
-<a href="https://www.pcbway.com/project/shareproject/Game_Boy_MBC5_Multicart_f2510f85.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
-
-<a href="https://oshpark.com/shared_projects/hYLYPWZR">The board is also listed on OSH Park as well.</a> **Be sure to get them in 0.8mm thickness if you order from here.**
+<a href="https://oshpark.com/shared_projects/OoMrqrWw">The board is also listed on OSH Park as well.</a> **Be sure to get them in 0.8mm thickness if you order from here.**
 
 ## Required Equipment
 
@@ -190,12 +186,15 @@ If you're having trouble fitting the circuit board into a shell, because the tab
 | C8                    | 0.01uF                 | 0603           | Capacitor (MLCC)   | [https://mou.sr/3AsRwK1](https://mou.sr/3AsRwK1) |
 | C12                   | 0.1uF                  | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | Q1                    | 2N7002                 | SOT-23         | N-Channel FET      | [https://mou.sr/3rgfh6J](https://mou.sr/3rgfh6J) |
+| Q2                    | SN74AHC1G126           | SC70           | NPN FET            | [https://mou.sr/3YlwRnW](https://mou.sr/3YlwRnW) |
 | R1                    | 10k                    | 0603           | Resistor           | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | R5                    | 130k                   | 0603           | Resistor           | [https://mou.sr/3MjXliy](https://mou.sr/3MjXliy) |
 | R6                    | 130k                   | 0603           | Resistor           | [https://mou.sr/3MjXliy](https://mou.sr/3MjXliy) |
 | R8                    | 10k                    | 0603           | Resistor           | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | R9                    | 130k                   | 0603           | Resistor           | [https://mou.sr/3MjXliy](https://mou.sr/3MjXliy) |
 | R10                   | 49.9k                  | 0603           | Resistor           | [https://mou.sr/3Q3NRZO](https://mou.sr/3Q3NRZO) |
+| R11                   | 15k                    | 0603           | Resistor           | [https://mou.sr/3zYvyRE](https://mou.sr/3zYvyRE) |
+| R12                   | 30k                    | 0603           | Resistor           | [https://mou.sr/46kfpCa](https://mou.sr/46kfpCa) |
 | SW1                   | See note               | 5.2 x 5.2mm    | Tactile Switch     | [https://mou.sr/3uipCQz](https://mou.sr/3uipCQz) OR see note |
 | SW2                   | CAS-D20TA              | J Form Lead    | Dual SPDT          | [https://mou.sr/46gGqF1](https://mou.sr/46gGqF1) |
 | SW3                   | CAS-D20TA              | J Form Lead    | Dual SPDT          | [https://mou.sr/46gGqF1](https://mou.sr/46gGqF1) |
@@ -207,6 +206,8 @@ If you're having trouble fitting the circuit board into a shell, because the tab
 | U6                    | SN74AHC1G126           | SC70           | Tri-State Buffer   | [https://mou.sr/3T9Zdim](https://mou.sr/3T9Zdim) |
 | U7                    | SN74AHC1G126           | SC70           | Tri-State Buffer   | [https://mou.sr/3T9Zdim](https://mou.sr/3T9Zdim) |
 | U8                    | SN74AHC1G126           | SC70           | Tri-State Buffer   | [https://mou.sr/3T9Zdim](https://mou.sr/3T9Zdim) |
+| M1                    | Vibration Motor        | Z43            | DC Motor           | [https://www.aliexpress.com/item/32787320737.html](https://www.aliexpress.com/item/32787320737.html) |
+| D1                    |BC817-40                | SOD-123        | Schottky diode     | [https://mou.sr/3LEXYCJ](https://mou.sr/3LEXYCJ) |
 
 ### Note about SW1
 
@@ -245,38 +246,6 @@ You could probably transfer over most of the 0.1uF capacitors but they're pretty
 If you want a Bucket Mouse branded label for your cartridge, look no further than <a href="https://krizdingus.com/mousebitelabs/">krizdingus's designs</a>. Special thanks to Kris for designing these, they look awesome! (If you are going to order/print these, use the high-res images hosted on his website, and *keep the labels for personal or non-commercial use only.*)
 
 ![image](https://github.com/MouseBiteLabs/Game-Boy-MBC5-Multicart/assets/97127539/3a4cd3d5-f683-40e3-acfb-1b8c549bb1bb)
-
-## Revision History
-
-### v1.3
-- Fixed debounce circuit for push button
-- Adjusted board edge tabs to better fit in shells
-
-### v1.2
-- Added nubs on the board edge to prevent the circuit board from rattling around in aftermarket cartridges
-
-### v1.1
-- Fix schematic errors
-- Extended cart edge down by 0.25 mm for better fitment
-- Added OSHW logo and "SUPPORT ORIGINAL CREATORS!"
-
-### v1.0
-- Prototype revision
-
-## Resources and Acknowledgements
-
-- <a href="http://www.devrs.com/gb/files/hardware.html">Jeff Frohwein's GameBoy Tech Page</a>
-- <a href="https://gbhwdb.gekkio.fi/">Game Boy Hardware Database</a>
-- <a href="https://catskull.net/gb-rom-database/">Nintendo Gameboy Game List</a>
-- <a href="https://www.gbxcart.com/">insideGadgets discord server for GBxCart RW compatibility requirements</a>
-- <a href="https://github.com/lesserkuma/FlashGBX">Lesserkuma's FlashGBX software</a>
-- <a href="https://www.ti.com/lit/ds/symlink/tps3613-01.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1698238885366&ref_url=https%253A%252F%252Feu.mouser.com%252F">TPS3613 Datasheet</a>
-- Board outline modified from <a href="https://tinkerer.us/projects/homebrew-gameboy-cartridge.html">Dillon Nichols's Homebrew Gameboy Cartridge project</a>
-- Thanks to <a href="https://github.com/orangeglo">orangeglo</a> for his suggestion of adding spacers around the board edge for better fitment in aftermarket cartridges
-- Some components from <a href="https://github.com/adafruit/Adafruit-Eagle-Library">Adafruit's Eagle parts library</a>
-- Some components from <a href="https://www.snapeda.com/">SnapMagic</a>
-- Thank you to <a href="https://github.com/Gekkio">gekkio</a> for their deep Game Boy knowledge resources, and for collaboration in demystifying some of the design choices on Game Boy cartridges
-- Thanks to the awesome members of the <a href="https://moddedgameboy.club/">Modded Gameboy Club</a> for their feedback and support during the entire project development
 
 ## License
 
