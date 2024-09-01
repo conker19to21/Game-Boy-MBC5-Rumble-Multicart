@@ -10,6 +10,14 @@ Original files were converted from Eagle to KiCad cleaned and modified to add th
 
 Please note you will require either a Hot Air rework station or Hot Plate heating station to secure the DC motor properly to the board.
 
+The Rumble feature is optional and if you decide not to use it exclude the following"
+
+R11
+R12
+M1
+D1
+Q2
+
 Battery hold down is NOT included however can be aquired at the following 2 links:
 
 <a href="https://oshpark.com/shared_projects/XSjucPvH"> CR2Retainer</a>
@@ -204,7 +212,7 @@ If you're having trouble fitting the circuit board into a shell, because the tab
 | R8                    | 10k                    | 0603           | Resistor           | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | R9                    | 130k                   | 0603           | Resistor           | [https://mou.sr/3MjXliy](https://mou.sr/3MjXliy) |
 | R10                   | 49.9k                  | 0603           | Resistor           | [https://mou.sr/3Q3NRZO](https://mou.sr/3Q3NRZO) |
-| R11                   | 15k                    | 0603           | Resistor           | [https://mou.sr/3zYvyRE](https://mou.sr/3zYvyRE) |
+| R11                   | 15Ω                    | 0603           | Resistor           | [https://mou.sr/3zYvyRE](https://mou.sr/3zYvyRE) |
 | R12                   | 30k                    | 0603           | Resistor           | [https://mou.sr/46kfpCa](https://mou.sr/46kfpCa) |
 | SW1                   | See note               | 5.2 x 5.2mm    | Tactile Switch     | [https://mou.sr/3uipCQz](https://mou.sr/3uipCQz) OR see note |
 | SW2                   | CAS-D20TA              | J Form Lead    | Dual SPDT          | [https://mou.sr/46gGqF1](https://mou.sr/46gGqF1) |
