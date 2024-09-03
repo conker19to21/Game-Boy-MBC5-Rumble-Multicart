@@ -25,6 +25,10 @@ Battery hold down is NOT included however can be aquired at the following 2 link
 
 <a href="https://www.digikey.com/short/4zrrw5rr"> RETAINER</a>
 
+When installing D1 make sure it is in the correct orientation with diode line inside white boxed outline as seen in photo:
+
+![image](https://github.com/conker19to21/Game-Boy-MBC5-Rumble-Multicart/blob/main/IMG_5354.jpg)
+
 Special Thanks to Bucket Mouse, HDR and Bonzo!
 
 ![image](https://github.com/conker19to21/Game-Boy-MBC5-Rumble-Multicart/blob/main/IMG_5336.jpg)
