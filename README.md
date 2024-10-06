@@ -36,8 +36,6 @@ Special Thanks to Bucket Mouse, HDR and Bonzo!
 
 Please see below for the Mouse's original documentation.
 
-![image](https://private-user-images.githubusercontent.com/79350460/362808066-d0c1e5a3-aa70-49f6-8867-7be02a11127e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjUxNzgzNjYsIm5iZiI6MTcyNTE3ODA2NiwicGF0aCI6Ii83OTM1MDQ2MC8zNjI4MDgwNjYtZDBjMWU1YTMtYWE3MC00OWY2LTg4NjctN2JlMDJhMTExMjdlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTAxVDA4MDc0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA1MjI0NGZjN2M0MmQwMzY3ZTIxMTJkNjZlNmY0YThiMWQ0MDJiY2EwYzVjMDg4ZDA5NmZlMzE5MmU4ZjRjODkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.tLwJES8k5k2GEA-q7z0vVUgHWVOFACCc68rWR7xbyPs)
-
 The features are as follows:
 
 - Able to make a cartridge with either 2x 2 MB games or 4x 1 MB games
@@ -273,7 +271,7 @@ If you want a Bucket Mouse branded label for your cartridge, look no further tha
 
 ![image](https://github.com/MouseBiteLabs/Game-Boy-MBC5-Multicart/assets/97127539/3a4cd3d5-f683-40e3-acfb-1b8c549bb1bb)
 
-###Why does SW2A need to be OFF?
+### Why does SW2A need to be OFF?
 
 SW2A in the ON position previously allowed the multicart to swap games whenever you power cycled the Game Boy. This was achieved by connecting the /RST line on the Game Boy to the CLK input on the flip-flop. The /RST line was held low when power was off by the RESET output of the TPS3613 battery management IC driving the gate of a FET.
 
