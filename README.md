@@ -249,6 +249,8 @@ Instead of using the somewhat pricey switch designated for SW2 and SW3, you can 
 
 ![image](https://github.com/MouseBiteLabs/Game-Boy-MBC5-Multicart/assets/97127539/40d1f523-6df1-4596-8ef3-968f2b9fd656)
 
+### REMINDER: SW2A MUST BE IN THE OFF POSITION.
+
 ### Usable Donor Cartridge Parts
 
 You can use a few parts from the donor cart on the new board to save some money. Note that you will generally get better reliability with new parts as opposed to old ones. For example: I have seen failed RAM chips from donors in the past.
@@ -270,6 +272,16 @@ You could probably transfer over most of the 0.1uF capacitors but they're pretty
 If you want a Bucket Mouse branded label for your cartridge, look no further than <a href="https://krizdingus.com/mousebitelabs/">krizdingus's designs</a>. Special thanks to Kris for designing these, they look awesome! (If you are going to order/print these, use the high-res images hosted on his website, and *keep the labels for personal or non-commercial use only.*)
 
 ![image](https://github.com/MouseBiteLabs/Game-Boy-MBC5-Multicart/assets/97127539/3a4cd3d5-f683-40e3-acfb-1b8c549bb1bb)
+
+###Why does SW2A need to be OFF?
+
+SW2A in the ON position previously allowed the multicart to swap games whenever you power cycled the Game Boy. This was achieved by connecting the /RST line on the Game Boy to the CLK input on the flip-flop. The /RST line was held low when power was off by the RESET output of the TPS3613 battery management IC driving the gate of a FET.
+
+The datasheet says this output is a push-pull output, and implies it will behave normally when power is off and the battery is being relied on for power. However, that is not the behavior I have later found to be true. Instead, if the voltage on the VDD pin is too low (like when the power is turned off), this RESET output floats. This causes the FET to not be asserted, and then allows the /RST line to float.
+
+In Modes 3 or 4, where SW2A is in the ON position, /RST is connected to the flip-flop's CLK input. If /RST floats, then CLK floats, which can cause excess current draw from the flip-flop, draining the battery much faster than expected. Therefore, it is recommended to ONLY use a button to change games, and not to rely on power cycling.
+
+A new board to replace this design with something more suitable will be completed in the future. In the meantime, do not put SW2A in the OFF position.
 
 ## Resources and Acknowledgements
 
